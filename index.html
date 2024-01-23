@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- taillwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<!-- taillwind css -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'hocky-primary':'#FF4240',
+            
+          }
+        }
+      }
+    }
+  </script>
+<!-- custom styles -->
+<style>
+    .font-manrop{
+        font-family: "Manrope", sans-serif;
+    
+    }
+</style>
+
+</head>
+<body>
+    <header class="container mx-auto">
+        <!-- nav section start -->
+        <nav class="">
+            <div class="navbar bg-base-100 p-4">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu font-manrop text-base menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a class="text-hocky-primary font-bold">Home</a></li>
+                      <li><a class="text-[#424247]">About</a></li>
+                      <li><a class="text-[#424247]">Pages</a></li>
+                      <li><a class="text-[#424247]">Blog</a></li>
+                      <li><a class="text-[#424247]">Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold font-manrop">Hockey<span class="text-hocky-primary">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu font-manrop  text-base menu-horizontal px-1">
+                    <li><a class="text-hocky-primary font-bold">Home</a></li>
+                      <li><a class="text-[#424247]">About</a></li>
+                      <li><a class="text-[#424247]">Pages</a></li>
+                      <li><a class="text-[#424247]">Blog</a></li>
+                      <li><a class="text-[#424247]">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex items-center gap-5 justify-between">
+                   <img class="w-6 h-6 hidden lg:flex" src="images/icon.png" alt=""> 
+                  <a class="btn bg-hocky-primary text-lg font-manrop font-bold lg:text-xl text-white ">Get Ticket</a>
+                </div>
+                </div>
+              </div>
+        </nav>
+        <!-- nav section end -->
+    </header>
+    <main class="container mx-auto">
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
