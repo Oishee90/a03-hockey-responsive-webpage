@@ -30,6 +30,9 @@
   </script>
 <!-- custom styles -->
 <style>
+  .hero-content{
+    max-width: 84rem;
+  }
     .font-manrop{
         font-family: "Manrope", sans-serif;
     
@@ -45,12 +48,18 @@
       
     }
     .custom-border{
-      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='8' stroke-linecap='square'/%3e%3c/svg%3e");
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%2313131833' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='8' stroke-linecap='square'/%3e%3c/svg%3e");
       width: 100%;
       height: 1px;
       border: none;
+      margin: 35px 0 !important;
     }
     
+    @media screen and (max-width:767px){
+      .mt-0{
+        margin-top: 0 !important;
+      }
+    }
 </style>
 
 </head>
@@ -259,7 +268,11 @@
                <div class=" rounded-2xl border-2 m-2 bg-base-100 shadow-xl">
                 <div class=" flex flex-col lg:flex-row justify-around gap-2  p-6">
                 <div class="w-[100%]">
-                  <img class="w-full h-full rouded" src="images/5.png" alt="">
+                  <picture>
+                    <source srcset="images/5.png" media="(min-width:768px)">
+                    <source srcset="images/5-mob.png" media="(max-width:767px)">
+                    <img class="w-full h-full rouded" src="images/default.png" alt="">
+                  </picture>
                 </div>
                 <div class="flex flex-col space-y-1 p-2 " >
                   <div class="flex gap-5 items-center font-manrop">
@@ -285,7 +298,11 @@
              <div class=" rounded-2xl border-2 m-2 bg-base-100 shadow-xl">
               <div class=" flex flex-col lg:flex-row justify-around gap-2  p-6">
               <div class="w-[100%]">
-                <img class="w-full h-full rouded" src="images/6.png" alt="">
+                <picture>
+                  <source srcset="images/6.png" media="(min-width:768px)">
+                  <source srcset="images/6-mob.png" media="(max-width:767px)">
+                  <img class="w-full h-full rouded" src="images/default.png" alt="">
+                </picture>
               </div>
               <div class="flex flex-col space-y-1 p-2 " >
                 <div class="flex gap-5 items-center font-manrop">
@@ -311,7 +328,11 @@
               <div class=" rounded-2xl border-2 m-2 bg-base-100 shadow-xl">
                 <div class=" flex flex-col lg:flex-row justify-around gap-2  p-6">
                 <div class="w-[100%]">
-                  <img class="w-full h-full rouded" src="images/7.png" alt="">
+                  <picture>
+                    <source srcset="images/7.png" media="(min-width:768px)">
+                    <source srcset="images/7-mob.png" media="(max-width:767px)">
+                    <img class="w-full h-full rouded" src="images/default.png" alt="">
+                  </picture>
                 </div>
                 <div class="flex flex-col space-y-1 p-2 " >
                   <div class="flex gap-5 items-center font-manrop">
@@ -338,7 +359,11 @@
            <div class=" rounded-2xl border-2 m-2 bg-base-100 shadow-xl">
             <div class=" flex flex-col lg:flex-row justify-around gap-2  p-6">
             <div class="w-[100%]">
-              <img class="w-full h-full rouded" src="images/8.png" alt="">
+              <picture>
+                <source srcset="images/8.png" media="(min-width:768px)">
+                <source srcset="images/8-mob.png" media="(max-width:767px)">
+                <img class="w-full h-full rouded" src="images/default.png" alt="">
+              </picture>
             </div>
             <div class="flex flex-col space-y-1 p-2 " >
               <div class="flex gap-5 items-center font-manrop">
@@ -365,7 +390,11 @@
            <div class=" rounded-2xl border-2 m-2 bg-base-100 shadow-xl">
             <div class=" flex flex-col lg:flex-row justify-around gap-2  p-6">
             <div class="w-[100%]">
-              <img class="w-full h-full rouded" src="images/9.png" alt="">
+              <picture>
+                <source srcset="images/9.png" media="(min-width:768px)">
+                <source srcset="images/9-mob.png" media="(max-width:767px)">
+                <img class="w-full h-full rouded" src="images/default.png" alt="">
+              </picture>
             </div>
             <div class="flex flex-col space-y-1 p-2 " >
               <div class="flex gap-5 items-center font-manrop">
@@ -394,7 +423,11 @@
            <div class=" rounded-2xl border-2 m-2 bg-base-100 shadow-xl">
             <div class=" flex flex-col lg:flex-row justify-around gap-2  p-6">
             <div class="w-[100%]">
-              <img class="w-full h-full rouded" src="images/10.png" alt="">
+              <picture>
+                <source srcset="images/10.png" media="(min-width:768px)">
+                <source srcset="images/10-mob.png" media="(max-width:767px)">
+                <img class="w-full h-full rouded" src="images/default.png" alt="">
+              </picture>
             </div>
             <div class="flex flex-col space-y-1 p-2 " >
               <div class="flex gap-5 items-center font-manrop">
@@ -422,7 +455,91 @@ In ball hockey, where players compete without skates and typically on a non-ice 
             </div>
         </section>
 
+ <!-- Client question -->
+ <section class="my-20">
+  <div class="mt-15">
+    <div class="custom-border border-2  border-stone-300 w-auto "></div> 
+</div>
+<div class="font-manrop my-8 text-center space-y-6">
+  <h1 class="text-2xl lg:text-4xl font-extrabold text-[#131318]">Clients Question</h1>
+  <p class="text-base">Whether you seek equipment recommendations or game strategy insights, our platform is dedicated to providing comprehensive .
+    <div class="custom-border border-2  border-stone-300 w-auto "></div>
+    <!-- question -->
+    <div>
+      <div class="border rounded-lg border-[#1313181A]">
+        <div class="hero min-h-screen ">
+          <div class="hero-content gap-10 flex-col lg:flex-row">
+            <img src="images/11.png" class="max-w-sm rounded-lg h-auto "/>
+            <div class="space-y-5">
+              <div class="collapse collapse-plus border-b-2 rounded-none border-[#1313181A]">
+                <input type="radio" name="my-accordion-3" checked="checked" /> 
+                <div class="collapse-title font-manrop text-left text-xl text-[#131318] font-bold">
+                  Our Equipment
+                </div>
+                <div class="collapse-content"> 
+                  <p class="font-manrop text-[#13131899]">Explore a curated selection of top-tier hockey equipment on our website, meticulously chosen to elevate your game. From cutting-edge sticks to protective gear, we offer a comprehensive range that ensures both performance and safety on the ice.
+  
+                  </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b-2 rounded-none border-[#1313181A]">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title font-manrop text-left text-xl text-[#131318] font-bold">
+                  Hockey Training
+                </div>
+                <div class="collapse-content"> 
+                  <p class="font-manrop text-[#13131899]">Elevate your skills with our hockey training resources, meticulously designed to sharpen your techniques and enhance your on-ice performance. Whether you're a beginner or a seasoned player, our comprehensive training guides and drills cater to all levels, ensuring you step onto the rink with confidence and prowess.
+              </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b-2 rounded-none border-[#1313181A]">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title font-manrop text-left text-xl text-[#131318] font-bold">
+                  Private Lessons
+                </div>
+                <div class="collapse-content"> 
+                  <p class="font-manrop text-[#13131899]">Refine your hockey prowess with our personalized private lessons, tailored to meet your individual needs and goals on the ice. Our experienced coaches provide one-on-one guidance, unlocking your full potential and accelerating your journey to becoming a standout player.
+              </p>
+                </div>
+              </div>
+  
+              <div class="collapse collapse-plus border-b-2 rounded-none border-[#1313181A]">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title font-manrop text-left text-xl text-[#131318] font-bold">
+                  Ski Touring
+                </div>
+                <div class="collapse-content"> 
+                  <p class="font-manrop text-[#13131899]">From beginners seeking breathtaking mountain vistas to advanced enthusiasts craving challenging terrain, our guided tours and lessons offer an immersive and personalized adventure in the world of ski touring.
+              </p>
+                </div>
+              </div>
 
+              <div class="collapse collapse-plus border-b-2 rounded-none border-[#1313181A]">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title font-manrop text-left text-xl text-[#131318] font-bold">
+                  Booking
+                </div>
+                <div class="collapse-content"> 
+                  <p class="font-manrop text-[#13131899]">Streamline your experience with our hassle-free booking system, designed to effortlessly reserve your spot for hockey training, private lessons, or thrilling ski touring adventures. Our user-friendly platform ensures a seamless process, allowing you to secure your place and focus on the excitement that awaits.
+              </p>
+                </div>
+              </div>
+              <div class="collapse collapse-plus border-b-2 rounded-none border-[#1313181A]">
+                <input type="radio" name="my-accordion-3" /> 
+                <div class="collapse-title font-manrop text-left text-xl text-[#131318] font-bold">
+                  Pricings
+                </div>
+                <div class="collapse-content"> 
+                  <p class="font-manrop text-[#13131899]">. Our commitment to clarity ensures you can explore and select the pricing plan that aligns perfectly with your preferences, making your decision-making process straightforward and rewarding.
+              </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </section>
 
 
         <!-- get in touch section -->
@@ -512,7 +629,7 @@ In ball hockey, where players compete without skates and typically on a non-ice 
 </div>
 <div class="mt-4">
               <label for="" class="text-xl font-bold text-[#131318]">Message</label>
-              <textarea class="w-full textarea mt-2  bg-[#13131805]  placeholder-[#1313184D]" placeholder="Write Your message" rows="15"></textarea>
+              <textarea class="w-full textarea mt-2  bg-[#13131805]  placeholder-[#1313184D] h-[200px] md:h-auto" placeholder="Write Your message" rows="15"></textarea>
           </div>
           <div class="mt-4">
             <a href="" class="btn w-full bg-[#FF4240] text-[white]">Send Message</a>
@@ -532,10 +649,10 @@ In ball hockey, where players compete without skates and typically on a non-ice 
             </div>
             <nav>
               <div class="grid grid-flow-col gap-8">
-               <a href="" ><i class="text-[24px] fa-brands fa-facebook"></i></a>
-               <a href="" ><i class="text-[24px] fa-brands fa-twitter"></i></a>
-               <a href="" ><i class="text-[24px] fa-brands fa-square-instagram"></i></a>
-               <a href="" ><i class="text-[24px] fa-brands fa-github"></i></a>
+               <a href="https://web.facebook.com/?lang=en" ><i class="text-[24px] fa-brands fa-facebook"></i></a>
+               <a href="https://twitter.com/?lang=en" ><i class="text-[24px] fa-brands fa-twitter"></i></a>
+               <a href="https://www.instagram.com/" ><i class="text-[24px] fa-brands fa-square-instagram"></i></a>
+               <a href="https://github.com/" ><i class="text-[24px] fa-brands fa-github"></i></a>
               </div>
             </nav> 
          
@@ -548,17 +665,19 @@ In ball hockey, where players compete without skates and typically on a non-ice 
    
     
       <footer class="footer  p-16 bg-[#131318]  font-manrop">
-        <aside class="space-y-2 sm:mx-auto">
+        <aside class="space-y-2 mx-auto md:block flex flex-col items-center">
           <header class=" text-white text-3xl font-extrabold">Get In Touch</header> 
-          <p class="text-[#FFFFFF99] font-medium text-base">Dit amet consectetur. Condimentum <br> adipiscing aliquam turpis placerat dolor. Purus <br> urna in sit nullam proin. </p>
-          <div class="flex justify-center items-center gap-2"><i class="fa-regular text-[24px] fa-envelope text-[#FF4240] py-2"></i>
+          <p class="text-[#FFFFFF99] font-medium text-base text-center md:text-left">Navigate the game with ease <br> by exploring  where you'll find quick <br>ensuring a seamless experience on our hockey website.
+            <div class="flex  items-center gap-2 mt-0">
+               <i class="fa-regular md:text-[24px] text-[20px] fa-envelope text-[#FF4240] py-2"></i>
             <h3 class="py-2 font-medium text-[#FFFFFF99] ">hockeys@support.com</h3></div>
-            <div class="flex justify-center items-center gap-2"><i class="fa-solid fa-phone text-[24px]  text-[#FF4240] py-2"></i>
+            <div class="flex  items-center gap-2 mt-0">
+              <i class="fa-solid fa-phone md:text-[24px] text-[20px]  text-[#FF4240] py-2"></i>
               <h3 class="py-2 font-medium text-[#FFFFFF99] ">hockeys@support.com</h3></div>
         </aside> 
-      <div class="flex flex-row  justify-center gap-26 spaxe-x-4 gap-28 sm:mx-auto">
+      <div class="flex flex-row  justify-center gap-26 spaxe-x-4 gap-28 mx-auto">
        
-        <nav class="flex flex-col   space-y-2">
+        <nav class="flex flex-col space-y-2 md:items-start items-center">
           <header class=" text-white text-lg font-extrabold">Company</header> 
           <div><a class="link link-hover text-[#FFFFFF99] font-medium text-base">About us</a></div>
           <div><a class="link link-hover text-[#FFFFFF99] font-medium text-base">Leadership</a></div>
@@ -567,7 +686,7 @@ In ball hockey, where players compete without skates and typically on a non-ice 
          <div> <a class="link link-hover text-[#FFFFFF99] font-medium text-base">Legal Notice</a></div>
         </nav> 
       
-      <nav class="flex flex-col  space-y-2">
+      <nav class="flex flex-col space-y-2 md:items-start items-center">
           <header class=" text-white text-lg font-extrabold">Support</header> 
           <div><a class="link link-hover text-[#FFFFFF99] font-medium text-base">Help</a></div>
           <div><a class="link link-hover text-[#FFFFFF99] font-medium text-base">FAQ</a></div>
@@ -577,7 +696,7 @@ In ball hockey, where players compete without skates and typically on a non-ice 
         </nav> 
       
       </div>
-      <aside class="space-y-2  sm:text-center sm:mx-auto">
+      <aside class="space-y-2  sm:text-center mx-auto">
         <header class=" text-white text-lg font-extrabold">Services</header> 
         <div><a class="link link-hover text-[#FFFFFF99] font-medium text-base">Academy </a></div>
           <div><a class="link link-hover text-[#FFFFFF99] font-medium text-base">Group Lesson</a></div>
