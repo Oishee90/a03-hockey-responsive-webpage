@@ -59,6 +59,10 @@
       .mt-0{
         margin-top: 0 !important;
       }
+      p{
+        padding-left: 4px;
+        padding-right: 4px;
+      }
     
     }
 </style>
@@ -463,14 +467,18 @@ In ball hockey, where players compete without skates and typically on a non-ice 
 </div>
 <div class="font-manrop my-8 text-center space-y-6">
   <h1 class="text-2xl lg:text-4xl font-extrabold text-[#131318]">Clients Question</h1>
-  <p class="text-base text-left">Whether you seek equipment recommendations or game strategy insights, our platform is dedicated to providing comprehensive .
+  <p class="text-base">Whether you seek equipment recommendations or game strategy insights, our platform is dedicated to providing comprehensive .
     <div class="custom-border border-2  border-stone-300 w-auto "></div>
     <!-- question -->
     <div>
       <div class="border rounded-lg border-[#1313181A]">
-        <div class="hero min-h-screen ">
+        <div class="hero">
           <div class="hero-content gap-10 flex-col lg:flex-row">
-            <img src="images/11.png" class=" rounded-lg h-auto "/>
+            <picture>
+              <source srcset="images/11.png" media="(min-width:768px)">
+              <source srcset="images/11-mob.png" media="(max-width:767px)">
+              <img class="md:max-w-sm rounded-lg h-auto" src="images/default.png" alt="">
+            </picture>
             <div class="space-y-5">
               <div class="collapse collapse-plus border-b-2 rounded-none border-[#1313181A]">
                 <input type="radio" name="my-accordion-3" checked="checked" /> 
@@ -676,7 +684,7 @@ In ball hockey, where players compete without skates and typically on a non-ice 
               <i class="fa-solid fa-phone md:text-[24px] text-[20px]  text-[#FF4240] py-2"></i>
               <h3 class="py-2 font-medium text-[#FFFFFF99] ">hockeys@support.com</h3></div>
         </aside> 
-      <div class="flex flex-row  justify-center gap-26 spaxe-x-4 gap-28 mx-auto">
+      <div class="flex flex-row  justify-center  spaxe-x-4 gap-12 md:gap-16 lg:gap-28 mx-auto">
        
         <nav class="flex flex-col space-y-2 md:items-start items-center">
           <header class=" text-white text-lg font-extrabold">Company</header> 
@@ -697,7 +705,7 @@ In ball hockey, where players compete without skates and typically on a non-ice 
         </nav> 
       
       </div>
-      <aside class="space-y-2  sm:text-center mx-auto">
+      <aside class="space-y-2 text-center  md:text-left mx-auto md:block flex flex-col justify-center items-center">
         <header class=" text-white text-lg font-extrabold">Services</header> 
         <div><a class="link link-hover text-[#FFFFFF99] font-medium text-base">Academy </a></div>
           <div><a class="link link-hover text-[#FFFFFF99] font-medium text-base">Group Lesson</a></div>
