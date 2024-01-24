@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <!-- taillwind and daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,6 +43,12 @@
     background-color: rgba(19, 19, 24, 0.50);;
       border-radius: 20px !important;
       
+    }
+    .custom-border{
+      background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='1' stroke-dasharray='6%2c 14' stroke-dashoffset='8' stroke-linecap='square'/%3e%3c/svg%3e");
+      width: 100%;
+      height: 1px;
+      border: none;
     }
 </style>
 
@@ -126,14 +133,18 @@
     </header>
     <main class="container mx-auto">
         <!-- club section start -->
-        <section class="space-y-10  mt-20 mx-4">
-            <div class="border-dashed border-2  border-stone-300 w-auto "></div>
+        <section class=" space-y-5 mt-20 ">
+    
+          <div class="mt-8">
+            <div class="custom-border border-2  border-stone-300 w-auto "></div> 
+        </div>
               <div class="font-manrop mb-8 text-center space-y-6">
                 <h1 class="text-2xl lg:text-4xl font-extrabold text-[#131318]">Professional Hockeys Club</h1>
                 <p class="text-base">Welcome to our professional hockey club's website, where the spirit of the game comes alive! 
                   </p></div>
-                  <div class="border-dashed border-2  border-stone-300 w-auto "></div>
+                  <div class="custom-border border-2  border-stone-300 w-auto "></div>
                    <div class=" grid lg:grid-cols-4 gap-1 mt-9">
+          
                     <!-- progressbar-1  -->
                      <div class="flex flex-col justify-center items-center gap-5 p-4" >
                         <div class="radial-progress bg-gray-50 text-red-500 " style="--value:87; transform: rotate(150deg); --size:8rem;" role="progressbar"><span class="text-black font-manrop text-3xl font-extrabold rotate-[209deg]">87%</span>
@@ -177,16 +188,19 @@
 
                 </div>
                 <div class="mt-8">
-                    <div class="border-dashed border-2  border-stone-300 w-auto "></div> 
+                    <div class="custom-border border-2  border-stone-300 w-auto "></div> 
                 </div>
         </section>
         <!-- progress section end -->
         <!-- program section start -->
-        <section class="space-y-10  mt-20 mx-4">
-            <div class="font-manrop mb-8 text-center space-y-6">
+        <section class="space-y-10  mt-10 mx-4 mb-10">
+            <div class="font-manrop mb-15 text-center space-y-5">
                 <h1 class="text-2xl lg:text-4xl font-extrabold text-[#131318]">Program Sections</h1>
                 <p class="text-base">These sections are presenting information related to teams, players, enjoyable experience on your hockey-themed platform.
                   </p></div>
+                  <div class="mt-15">
+                    <div class="custom-border border-2  border-stone-300 w-auto "></div> 
+                </div>
                    <div>
                   <!-- card -1 -->
                   <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
@@ -228,6 +242,123 @@
 
 
         </section>
+        <!-- get in touch section -->
+       <section class="my-20">
+        <div class="mt-15">
+          <div class="custom-border border-2  border-stone-300 w-auto "></div> 
+      </div>
+      <div class="font-manrop my-8 text-center space-y-6">
+        <h1 class="text-2xl lg:text-4xl font-extrabold text-[#131318]">Get In Touch</h1>
+        <p class="text-base">Stay connected with the pulse of the hockey world by visiting our 'Get In Touch' section.
+          </p></div>
+          <div class="custom-border border-2  border-stone-300 w-auto "></div>
+          <div class="lg:my-12  flex flex-col lg:flex-row justify-around gap-2 lg:items-start w-full">
+            <!-- contact card section -->
+             <div class="bg-white rounded-2xl border-2 m-2 border-[#13131819]">
+              <div class="lg:px-12 lg:py-12 px-4 py-4">
+                <div class="card lg:w-96 bg-[#BCED6D1A] mt- ">
+                  <div class="flex flex-col justify-center items-center lg:items-start">
+                  <figure class=" px-8 pt-8">
+                    <img src="images/group-1.png" alt="Shoes" class="rounded-xl" />
+                  </figure>
+                  <div class="card-body ">
+                    <p class="text-[#13131866]">Phone Number : </p>
+                    <h2 class="card-title text-[#131318] text-lg font-extrabold">
+                      (+62) 123-321-543</h2>
+              
+                  </div>
+                </div>
+              </div>
+              <!-- cr -2 -->
+              <div class="card lg:w-96  bg-[#fddd5f19] mt-6">
+                <div class="flex flex-col justify-center items-center lg:items-start">
+                <figure class=" px-8 pt-8">
+                  <img src="images/group-2.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body ">
+                  <p class="text-[#13131866]">Email : 
+                     </p>
+                  <h2 class="card-title text-[#131318] text-lg font-extrabold">
+                    hockeys@support.com</h2>
+            
+                </div>
+              </div>
+            </div>
+            <!-- car-3 -->
+            <div class="card lg:w-96   bg-[#629cf319] mt-6">
+              <div class="flex flex-col justify-center items-center lg:items-start">
+              <figure class=" px-8 pt-8">
+                <img src="images/group-3.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body ">
+                <p class="text-[#13131866]">Location : 
+                  </p>
+                <h2 class="card-title text-[#131318] text-lg font-extrabold">
+                  152/1 Mohakhali Wireless Gate</h2>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+
+             </div>
+
+          <!-- contact part -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 lg:px-4 p-4">
+            <div class="lg:col-span-2">
+              <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+                <div>
+                <label for="" class="text-xl font-bold text-[#131318]">Your Name</label>
+              <input type="text" placeholder="Enter Your Name" class="input mt-2  bg-[#13131805] w-full placeholder-[#1313184D] " />
+            </div>
+            <!-- input-2 -->
+            <div>
+              <label for="" class="text-xl font-bold text-[#131318]">Your Email</label>
+            <input type="email" placeholder="Enter Your Email" class="input mt-2 bg-[#13131805] w-full placeholder-[#1313184D] " />
+          </div>
+          <!-- input-3 -->
+          <div>
+            <label for="" class="text-xl font-bold text-[#131318]">Subject</label>
+          <input type="text" placeholder="Enter Your Subject" class="input mt-2  bg-[#13131805] w-full placeholder-[#1313184D]" />
+        </div>
+        <!-- input-4 -->
+        <div>
+          <label for="" class="text-xl font-bold text-[#131318]">Phone Number</label>
+        <input type="number" placeholder="Enter Your Phone Number" class="input mt-2  bg-[#13131805] w-full placeholder-[#1313184D] " />
+      </div>
+</div>
+<div class="mt-4">
+              <label for="" class="text-xl font-bold text-[#131318]">Message</label>
+              <textarea class="w-full textarea mt-2  bg-[#13131805]  placeholder-[#1313184D]" placeholder="Write Your message" rows="15"></textarea>
+          </div>
+          <div class="mt-4">
+            <a href="" class="btn w-full bg-[#FF4240] text-[white]">Send Message</a>
+        </div>
+        
+            </div>
+            <div></div>
+          </div>
+        </div>
+        <!-- social icon -->
+        <div class="mx-4">
+          <footer class="footer footer-center p-8 bg-base-200 text-base-content rounded-2xl">
+            <div>
+              <h1 class="text-[#131318] text-2xl font-extrabold">
+                Social Media
+              </h1>
+            </div>
+            <nav>
+              <div class="grid grid-flow-col gap-8">
+               <a href="" ><i class="text-[24px] fa-brands fa-facebook"></i></a>
+               <a href="" ><i class="text-[24px] fa-brands fa-twitter"></i></a>
+               <a href="" ><i class="text-[24px] fa-brands fa-square-instagram"></i></a>
+               <a href="" ><i class="text-[24px] fa-brands fa-github"></i></a>
+              </div>
+            </nav> 
+         
+          </footer>
+        </div>
+       </section>
 
     </main>
     <footer>
